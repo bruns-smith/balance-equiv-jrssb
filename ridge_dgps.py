@@ -1,24 +1,6 @@
 import numpy as np
-from matplotlib import pyplot as plt
-import pandas as pd
-
-from sklearn.linear_model import LinearRegression, Ridge, Lasso
-
-import cvxpy as cp
-
-from scipy.optimize import Bounds
-from scipy.optimize import LinearConstraint
-from scipy.optimize import NonlinearConstraint
-from scipy.optimize import SR1, BFGS
-from scipy.optimize import minimize
-
 import scipy.stats
 from scipy.stats import special_ortho_group
-
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.model_selection import cross_val_score, cross_val_predict, GridSearchCV, KFold
-
-plt.rcParams.update({'font.size': 16})
 
 def setup_source_dgp(scaler=1, min_eig=1e-6, max_eig=2, n=2000, d=50):
 
